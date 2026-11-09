@@ -1,14 +1,15 @@
 ---
 name: Label Checker
-on:  # yamllint disable-line rule:truthy
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
-      - labeled
-      - unlabeled
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:  # yamllint disable-line rule:truthy
+#   pull_request:
+#     types:
+#       - opened
+#       - synchronize
+#       - reopened
+#       - labeled
+#       - unlabeled
+# 
 jobs:
 
   check_semver_label:
